@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>selfjoins</h1>
+        <table border="5px">
+         <tr>
+            <th>ename</th>
+            <th>empno</th>
+            <th>job</th>
+            <th>mgr</th>
+            <th>hiredate</th>
+            <th>salary</th>
+            <th>comm</th>
+            <th>deptno</th>
+            <th>managername</th>
+            <th>manager no</th>
+        </tr>
+        {% for jm in JMED %}
+        <tr>
+            <th>{{jm.ename}}</th>
+            <th>{{jm.empno}}</th>
+            <th>{{jm.job}}</th>
+            <th>{{jm.mgr}}</th>
+            <th>{{jm.hiredate}}</th>
+            <th>{{jm.salary}}</th>
+            <th>{{jm.comm}}</th>
+            <th>{{jm.deptno}}</th>
+            <th>{{jm.mgr.ename}}</th>
+            <th>{{jm.mgr.empno}}</th>
+            
+        </tr>
+
+        {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

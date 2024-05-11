@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>empdeptmgr</h1>
+        <table border="'">
+            <tr>
+                <th>employeename</th>
+                <th>managername</th>
+                <th>dname</th>
+                <th>deptno</th>
+                <th>job</th>
+                <th>salary</th>
+            </tr>
+            {% for ued in UEDMD %}
+            <tr>
+                <td> {{ued.ename}} </td>
+                <td> {{ued.mgr.ename}} </td>
+                <td> {{ued.deptno.dname}} </td>
+                <td> {{ued.deptno.deptno}} </td>
+                <td> {{ued.job}} </td>
+                <td> {{ued.salary}} </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

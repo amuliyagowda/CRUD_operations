@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>delete_emp</h1>
+        <table border="5px">
+            <tr>
+                <th>employeename</th>
+                <th>managername</th>
+                <th>dname</th>
+                <th>deptno</th>
+                <th>job</th>
+                <th>salary</th>
+            </tr>
+            {% for dem in DEMDO %}
+            <tr>
+                <td> {{dem.ename}} </td>
+                <td> {{dem.mgr.ename}} </td>
+                <td> {{dem.deptno.dname}} </td>
+                <td> {{dem.deptno.deptno}} </td>
+                <td> {{dem.job}} </td>
+                <td> {{dem.salary}} </td>
+            </tr>
+            {% endfor %}
+        </table>
+        
+    </center>
+</body>
+</html>

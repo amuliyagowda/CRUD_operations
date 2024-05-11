@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>equijoins</h1>
+        <table border="5px">
+        <tr>
+            <th>ename</th>
+            <th>empno</th>
+            <th>job</th>
+            <th>mgr</th>
+            <th>hiredate</th>
+            <th>salary</th>
+            <th>comm</th>
+            <th>deptno</th>
+            <th>deptno</th>
+            <th>dname</th>
+            <th>location</th>
+        </tr>
+        {% for edo in JDED %}
+        <tr>
+            <th> {{edo.ename}} </th>
+            <th> {{edo.empno}} </th>
+            <th> {{edo.job}} </th>
+            <th> {{edo.mgr}} </th>
+            <th> {{edo.hiredate}} </th>
+            <th> {{edo.salary}} </th>
+            <th> {{edo.comm}} </th>
+            <th> {{edo.deptno}} </th>
+            <th> {{edo.deptno.deptno}} </th>
+            <th> {{edo.deptno.dname}} </th>
+            <th> {{edo.deptno.location}} </th>
+        </tr>
+
+        {% endfor %}
+    </table>
+    </center>
+</body>
+</html>
